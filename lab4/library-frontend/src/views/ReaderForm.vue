@@ -15,7 +15,20 @@
         <v-col cols="12" md="6"><v-text-field v-model="reader.phone" label="Телефон" /></v-col>
         <v-col cols="12" md="6"><v-text-field v-model="reader.address" label="Адрес" /></v-col>
         <v-col cols="12" md="6">
-          <v-text-field v-model="reader.birth_date" label="Дата рождения" type="date" />
+          <v-text-field
+            v-model="reader.birth_date"
+            label="Дата рождения"
+            type="date"
+          />
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-select
+            :items="halls"
+            item-title="name"
+            item-value="id"
+            v-model="reader.hall"
+            label="Hall"
+          />
         </v-col>
         <v-col cols="12" md="6">
           <v-select
@@ -27,7 +40,10 @@
           />
         </v-col>
         <v-col cols="12" md="6">
-          <v-switch v-model="reader.academic_degree" label="Имеет ученую степень" />
+          <v-switch
+            v-model="reader.academic_degree"
+            label="Имеет ученую степень"
+          />
         </v-col>
       </v-row>
       <v-row class="mt-4"
@@ -55,7 +71,9 @@ export default {
         phone: "",
         education: "",
         academic_degree: false,
+        hall: null,
       },
+      halls: [],
       isEdit: false,
       menu: false,
       educationOptions: [
@@ -66,6 +84,7 @@ export default {
     };
   },
   async mounted() {
+    await this.loadHalls();
     const id = this.$route.params.id;
     if (id) {
       this.isEdit = true;
@@ -77,6 +96,14 @@ export default {
     }
   },
   methods: {
+    async loadHalls() {
+      try {
+        const res = await api.getHalls();
+        this.halls = res.data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
     async submit() {
       try {
         if (this.isEdit) await api.updateReader(this.$route.params.id, this.reader);
