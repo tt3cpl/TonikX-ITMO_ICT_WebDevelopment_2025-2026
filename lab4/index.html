@@ -1,0 +1,3052 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tt3cpl.github.io/tt3cpl/TonikX-ITMO_ICT_WebDevelopment_2025-2026/reports/lab4/">
+      
+      
+        <link rel="prev" href="../lab3/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Лабораторная 4 - Отчеты</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no4-vuejs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Отчеты" class="md-header__button md-logo" aria-label="Отчеты" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Отчеты
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Отчеты" class="md-nav__button md-logo" aria-label="Отчеты" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Отчеты
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 4
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Название работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Предметная область
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выполнение работы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Выполнение работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Настройка проекта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Настройка зависимостей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Настройка Vuetify
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Настройка CORS на сервере
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Реализация API модуля
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Реализация API модуля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-srcapiaxiosjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создание HTTP клиента (src/api/axios.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-srcapiindexjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API функции (src/api/index.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Реализация интерфейсов аутентификации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Реализация интерфейсов аутентификации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsloginvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница входа (src/views/Login.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsregistervue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница регистрации (src/views/Register.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsprofilevue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница профиля (src/views/Profile.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Реализация навигации и маршрутизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Реализация навигации и маршрутизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcappvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Главный компонент (src/App.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcrouterindexjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрутизация (src/router/index.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Реализация интерфейсов для работы с данными
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Реализация интерфейсов для работы с данными">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsbooksvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список книг (src/views/Books.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewshallsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список залов (src/views/Halls.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsbookformvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Форма создания/редактирования книги (src/views/BookForm.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Реализация статистических отчетов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Реализация статистических отчетов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsreportsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница отчетов (src/views/Reports.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Особенности реализации с Vuetify
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Особенности реализации с Vuetify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Используемые компоненты Vuetify:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vuetify_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества Vuetify:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Архитектурные решения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Архитектурные решения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Разделение ответственности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Управление состоянием
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Обработка ошибок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Безопасность
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интеграция с серверной частью
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Интеграция с серверной частью">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. CORS настройка
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Аутентификация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. API эндпоинты
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подключение к API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Подключение к API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-http-axios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Создание HTTP клиента с Axios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-interceptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Автоматическая аутентификация через Interceptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Централизованная обработка ошибок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Создание API функций
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Создание API функций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Аутентификация:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с книгами:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Статистические запросы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-vue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Использование в Vue компонентах
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Процесс аутентификации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Соответствие эндпоинтам сервера
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Обработка CORS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Название работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Предметная область
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выполнение работы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Выполнение работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Настройка проекта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Настройка зависимостей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Настройка Vuetify
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Настройка CORS на сервере
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Реализация API модуля
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Реализация API модуля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-srcapiaxiosjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создание HTTP клиента (src/api/axios.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-srcapiindexjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API функции (src/api/index.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Реализация интерфейсов аутентификации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Реализация интерфейсов аутентификации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsloginvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница входа (src/views/Login.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsregistervue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница регистрации (src/views/Register.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsprofilevue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница профиля (src/views/Profile.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Реализация навигации и маршрутизации
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Реализация навигации и маршрутизации">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcappvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Главный компонент (src/App.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcrouterindexjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрутизация (src/router/index.js)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Реализация интерфейсов для работы с данными
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Реализация интерфейсов для работы с данными">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsbooksvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список книг (src/views/Books.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewshallsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список залов (src/views/Halls.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsbookformvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Форма создания/редактирования книги (src/views/BookForm.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Реализация статистических отчетов
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Реализация статистических отчетов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcviewsreportsvue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Страница отчетов (src/views/Reports.vue)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Особенности реализации с Vuetify
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Особенности реализации с Vuetify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vuetify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Используемые компоненты Vuetify:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vuetify_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Преимущества Vuetify:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Архитектурные решения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Архитектурные решения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Разделение ответственности
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Управление состоянием
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Обработка ошибок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Безопасность
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интеграция с серверной частью
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Интеграция с серверной частью">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. CORS настройка
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Аутентификация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. API эндпоинты
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подключение к API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Подключение к API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-http-axios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Создание HTTP клиента с Axios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-interceptors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Автоматическая аутентификация через Interceptors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Централизованная обработка ошибок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Создание API функций
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Создание API функций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Аутентификация:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Работа с книгами:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Статистические запросы:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-vue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Использование в Vue компонентах
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Процесс аутентификации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Соответствие эндпоинтам сервера
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Обработка CORS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no4-vuejs">Лабораторная работа №4: Реализация клиентской части средствами Vue.js</h1>
+<h2 id="_1">Название работы</h2>
+<p>Реализация клиентской части средствами Vue.js.</p>
+<h2 id="_2">Цель работы</h2>
+<p>Создание клиентской часть веб-приложения для системы управления библиотекой с использованием Vue.js и Vuetify.</p>
+<h2 id="_3">Задание</h2>
+<ol>
+<li>Настроить для серверной части, реализованной в лабораторной работе №3 CORS (Cross-origin resource sharing)</li>
+<li>Реализовать интерфейсы авторизации, регистрации и изменения учетных данных и настроить взаимодействие с серверной частью</li>
+<li>Реализовать список интерфейсов для взаимодействия с серверной частью в соответствии с предметной областью выбранной в 3 лабораторной работе</li>
+<li>Подключить vuetify или аналогичную библиотеку</li>
+</ol>
+<h2 id="_4">Предметная область</h2>
+<p>Создание клиентского интерфейса для системы управления библиотекой, обеспечивающего удобную работу с:</p>
+<ul>
+<li>Книгами в библиотеке</li>
+<li>Читателями библиотеки</li>
+<li>Читальными залами</li>
+<li>Выдачей книг</li>
+<li>Статистическими отчетами</li>
+</ul>
+<h2 id="_5">Выполнение работы</h2>
+<h3 id="1">1. Настройка проекта</h3>
+<p>Был создан Vue.js проект в папке <code>lab4/library-frontend/</code> со следующей структурой:</p>
+<pre><code>library-frontend/
+├── src/
+│   ├── api/           # API модуль для взаимодействия с сервером
+│   ├── views/         # Vue компоненты страниц
+│   ├── router/        # Маршрутизация приложения
+│   ├── App.vue        # Главный компонент приложения
+│   └── main.js        # Точка входа
+├── package.json       # Зависимости проекта
+└── vite.config.js     # Конфигурация Vite
+</code></pre>
+<h3 id="2">2. Настройка зависимостей</h3>
+<p>В файле <code>package.json</code> были добавлены необходимые зависимости:</p>
+<pre><code class="language-json">{
+  &quot;dependencies&quot;: {
+    &quot;@mdi/font&quot;: &quot;^7.4.47&quot;,
+    &quot;axios&quot;: &quot;^1.13.6&quot;,
+    &quot;vue&quot;: &quot;^3.5.29&quot;,
+    &quot;vue-router&quot;: &quot;^5.0.3&quot;,
+    &quot;vuetify&quot;: &quot;^4.0.1&quot;
+  }
+}
+</code></pre>
+<h3 id="3-vuetify">3. Настройка Vuetify</h3>
+<p>В файле <code>src/main.js</code> была выполнена настройка Vuetify:</p>
+<pre><code class="language-javascript">import &quot;vuetify/styles&quot;;
+import { createVuetify } from &quot;vuetify&quot;;
+import * as components from &quot;vuetify/components&quot;;
+import * as directives from &quot;vuetify/directives&quot;;
+
+const vuetify = createVuetify({
+  components,
+  directives,
+});
+
+const app = createApp(App);
+app.use(vuetify);
+app.use(router);
+app.mount(&quot;#app&quot;);
+</code></pre>
+<h3 id="4-cors">4. Настройка CORS на сервере</h3>
+<p>В файле <code>settings.py</code> (лабораторная работа №3) был добавлен <code>corsheaders</code>:</p>
+<pre><code class="language-python">INSTALLED_APPS = [
+    # ... другие приложения
+    'corsheaders',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    # ... другие middleware
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+</code></pre>
+<p>Это позволяет фронтенду на <code>localhost:5173</code> обращаться к бэкенду на <code>localhost:8000</code>.</p>
+<h3 id="5-api">5. Реализация API модуля</h3>
+<h4 id="http-srcapiaxiosjs">Создание HTTP клиента (<code>src/api/axios.js</code>)</h4>
+<pre><code class="language-javascript">import axios from &quot;axios&quot;;
+
+const api = axios.create({
+  baseURL: &quot;http://127.0.0.1:8000&quot;,
+  headers: {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+  },
+});
+
+api.interceptors.request.use((config) =&gt; {
+  const publicAuthEndpoints = [
+    &quot;/auth/token/login/&quot;,
+    &quot;/auth/users/&quot;,
+    &quot;/auth/token/logout/&quot;,
+  ];
+
+  const isPublicEndpoint = publicAuthEndpoints.some(
+    (endpoint) =&gt; config.url === endpoint,
+  );
+
+  if (!isPublicEndpoint) {
+    const token = localStorage.getItem(&quot;token&quot;);
+    if (token) {
+      config.headers.Authorization = `Token ${token}`;
+    }
+  }
+
+  return config;
+});
+
+api.interceptors.response.use(
+  (response) =&gt; response,
+  (error) =&gt; {
+    console.error(
+      &quot;API Error:&quot;,
+      error.response?.status,
+      error.response?.data || error.message,
+    );
+    return Promise.reject(error);
+  },
+);
+
+export default api;
+</code></pre>
+<p><strong>Особенности реализации:</strong></p>
+<ul>
+<li>Автоматическое добавление токена авторизации в заголовки</li>
+<li>Обработка ошибок с логированием</li>
+<li>Базовый URL для всех запросов</li>
+</ul>
+<h4 id="api-srcapiindexjs">API функции (<code>src/api/index.js</code>)</h4>
+<pre><code class="language-javascript">// Функции аутентификации
+async function login(username, password) {
+  const res = await api.post(&quot;/auth/token/login/&quot;, { username, password });
+  const token = res.data.auth_token || res.data.token;
+  if (token) localStorage.setItem(&quot;token&quot;, token);
+  return res.data;
+}
+
+async function logout() {
+  try {
+    await api.post(&quot;/auth/token/logout/&quot;);
+  } catch (e) {}
+  localStorage.removeItem(&quot;token&quot;);
+}
+
+async function register(username, password, email = &quot;&quot;) {
+  return api.post(&quot;/auth/users/&quot;, { username, password, email });
+}
+
+async function getCurrentUser() {
+  return api.get(&quot;/auth/users/me/&quot;);
+}
+
+async function updateUser(data) {
+  return api.put(&quot;/auth/users/me/&quot;, data);
+}
+
+async function setPassword(current_password, new_password) {
+  return api.post(&quot;/auth/users/set_password/&quot;, {
+    current_password,
+    new_password,
+  });
+}
+
+// Функции для работы с книгами
+async function getBooks() {
+  return api.get(&quot;/api/books/&quot;);
+}
+
+async function getBooksInHalls() {
+  return api.get(&quot;/api/books-in-halls/&quot;);
+}
+
+async function createBook(data) {
+  return api.post(&quot;/api/books/&quot;, data);
+}
+
+async function updateBook(id, data) {
+  return api.put(`/api/books/${id}/`, data);
+}
+
+// Функции для работы с залами
+async function getHalls() {
+  return api.get(&quot;/api/halls/&quot;);
+}
+
+async function createHall(data) {
+  return api.post(&quot;/api/halls/&quot;, data);
+}
+
+// Функции для работы с читателями
+async function getReaders() {
+  return api.get(&quot;/api/readers/&quot;);
+}
+
+async function createReader(data) {
+  return api.post(&quot;/api/readers/&quot;, data);
+}
+
+// Функции для работы с выдачами
+async function getIssues() {
+  return api.get(&quot;/api/issues/&quot;);
+}
+
+async function createIssue(data) {
+  return api.post(&quot;/api/issues/&quot;, data);
+}
+
+// Статистические функции
+async function getReaderBooks(readerId) {
+  return api.get(`/api/readers/${readerId}/books/`);
+}
+
+async function getIssuesOverdue() {
+  return api.get(&quot;/api/issues/overdue/&quot;);
+}
+
+async function getReadersUnder20() {
+  return api.get(&quot;/api/readers/under_20/&quot;);
+}
+
+async function getEducationStats() {
+  return api.get(&quot;/api/readers/education_stats/&quot;);
+}
+
+async function getRareBooksReaders() {
+  return api.get(&quot;/api/readers/rare_books/&quot;);
+}
+</code></pre>
+<h3 id="6">6. Реализация интерфейсов аутентификации</h3>
+<h4 id="srcviewsloginvue">Страница входа (<code>src/views/Login.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;v-text-field v-model=&quot;username&quot; label=&quot;Имя пользователя&quot; /&gt;
+    &lt;v-text-field v-model=&quot;password&quot; label=&quot;Пароль&quot; type=&quot;password&quot; /&gt;
+    &lt;v-btn color=&quot;primary&quot; @click=&quot;login&quot;&gt;Войти&lt;/v-btn&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import apiWrapper from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return { username: &quot;&quot;, password: &quot;&quot; };
+  },
+  methods: {
+    async login() {
+      try {
+        console.log(&quot;Attempting login with:&quot;, this.username);
+        const res = await apiWrapper.login(this.username, this.password);
+        console.log(&quot;Login response:&quot;, res);
+        const token = localStorage.getItem(&quot;token&quot;);
+        console.log(&quot;Token in localStorage:&quot;, token ? &quot;✓ Set&quot; : &quot;✗ Not set&quot;);
+        if (token) {
+          this.$router.push({ name: &quot;books&quot; });
+        } else {
+          alert(&quot;Token not saved&quot;);
+        }
+      } catch (e) {
+        console.error(&quot;Login error:&quot;, e);
+        alert(`Login failed: ${e.message || &quot;Unknown error&quot;}`);
+      }
+    },
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h4 id="srcviewsregistervue">Страница регистрации (<code>src/views/Register.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;h2&gt;Регистрация&lt;/h2&gt;
+    &lt;v-text-field v-model=&quot;username&quot; label=&quot;Имя пользователя&quot; /&gt;
+    &lt;v-text-field v-model=&quot;password&quot; label=&quot;Пароль&quot; type=&quot;password&quot; /&gt;
+    &lt;v-btn color=&quot;primary&quot; @click=&quot;register&quot;&gt;Зарегистрироваться&lt;/v-btn&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import apiWrapper from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return {
+      username: &quot;&quot;,
+      password: &quot;&quot;,
+    };
+  },
+  methods: {
+    async register() {
+      try {
+        await apiWrapper.register(this.username, this.password);
+        alert(&quot;Вы зарегистрированы&quot;);
+        this.$router.push(&quot;/login&quot;);
+      } catch (e) {
+        alert(&quot;Ошибка регистрации&quot;);
+      }
+    },
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h4 id="srcviewsprofilevue">Страница профиля (<code>src/views/Profile.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;h2&gt;Профиль&lt;/h2&gt;
+    &lt;div v-if=&quot;user&quot;&gt;
+      &lt;v-form @submit.prevent=&quot;updateProfile&quot;&gt;
+        &lt;v-text-field v-model=&quot;form.username&quot; label=&quot;Имя пользователя&quot; /&gt;
+        &lt;v-text-field v-model=&quot;form.email&quot; label=&quot;Email&quot; /&gt;
+        &lt;v-btn type=&quot;submit&quot; color=&quot;primary&quot;&gt;Сохранить&lt;/v-btn&gt;
+      &lt;/v-form&gt;
+
+      &lt;v-divider class=&quot;my-4&quot;&gt;&lt;/v-divider&gt;
+
+      &lt;h3&gt;Изменить пароль&lt;/h3&gt;
+      &lt;v-form @submit.prevent=&quot;changePassword&quot;&gt;
+        &lt;v-text-field
+          v-model=&quot;currentPassword&quot;
+          label=&quot;Текущий пароль&quot;
+          type=&quot;password&quot;
+        /&gt;
+        &lt;v-text-field
+          v-model=&quot;newPassword&quot;
+          label=&quot;Новый пароль&quot;
+          type=&quot;password&quot;
+        /&gt;
+        &lt;v-btn type=&quot;submit&quot; color=&quot;primary&quot;&gt;Изменить&lt;/v-btn&gt;
+      &lt;/v-form&gt;
+
+      &lt;v-divider class=&quot;my-4&quot;&gt;&lt;/v-divider&gt;
+
+      &lt;h3&gt;Данные пользователя&lt;/h3&gt;
+      &lt;p&gt;&lt;strong&gt;ID:&lt;/strong&gt; {{ user.id }}&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Имя пользователя:&lt;/strong&gt; {{ user.username }}&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; {{ user.email }}&lt;/p&gt;
+
+      &lt;v-divider class=&quot;my-4&quot;&gt;&lt;/v-divider&gt;
+
+      &lt;h3&gt;Токен авторизации&lt;/h3&gt;
+      &lt;v-text-field :model-value=&quot;token&quot; label=&quot;Token&quot; readonly /&gt;
+
+      &lt;v-divider class=&quot;my-4&quot;&gt;&lt;/v-divider&gt;
+      &lt;v-btn color=&quot;error&quot; @click=&quot;logout&quot;&gt;Выход&lt;/v-btn&gt;
+    &lt;/div&gt;
+    &lt;div v-else&gt;
+      &lt;p&gt;Вы не авторизованы&lt;/p&gt;
+      &lt;v-btn color=&quot;primary&quot; @click=&quot;$router.push('/login')&quot;&gt;Войти&lt;/v-btn&gt;
+    &lt;/div&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import apiWrapper from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return {
+      user: null,
+      form: {
+        username: &quot;&quot;,
+        email: &quot;&quot;,
+      },
+      currentPassword: &quot;&quot;,
+      newPassword: &quot;&quot;,
+      token: localStorage.getItem(&quot;token&quot;) || &quot;&quot;,
+    };
+  },
+  async mounted() {
+    try {
+      const res = await apiWrapper.getCurrentUser();
+      this.user = res.data;
+      this.form.username = this.user.username;
+      this.form.email = this.user.email || &quot;&quot;;
+    } catch (e) {
+      console.error(&quot;Failed to load user:&quot;, e);
+      this.user = null;
+    }
+  },
+  methods: {
+    async updateProfile() {
+      try {
+        const res = await apiWrapper.updateUser(this.form);
+        this.user = res.data;
+        alert(&quot;Profile updated&quot;);
+      } catch (e) {
+        alert(&quot;Update failed&quot;);
+      }
+    },
+    async changePassword() {
+      try {
+        await apiWrapper.setPassword(this.currentPassword, this.newPassword);
+        alert(&quot;Password changed&quot;);
+        this.currentPassword = &quot;&quot;;
+        this.newPassword = &quot;&quot;;
+      } catch (e) {
+        alert(&quot;Password change failed&quot;);
+      }
+    },
+    logout() {
+      apiWrapper.logout();
+      this.token = &quot;&quot;;
+      this.user = null;
+      this.$router.push(&quot;/login&quot;);
+    },
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h3 id="7">7. Реализация навигации и маршрутизации</h3>
+<h4 id="srcappvue">Главный компонент (<code>src/App.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-app&gt;
+    &lt;v-app-bar app&gt;
+      &lt;v-toolbar-title&gt;Библиотека&lt;/v-toolbar-title&gt;
+      &lt;v-spacer&gt;&lt;/v-spacer&gt;
+      &lt;v-btn text to=&quot;/books&quot;&gt;Книги&lt;/v-btn&gt;
+      &lt;v-btn text to=&quot;/halls&quot;&gt;Залы&lt;/v-btn&gt;
+      &lt;v-btn text to=&quot;/readers&quot;&gt;Читатели&lt;/v-btn&gt;
+      &lt;v-btn text to=&quot;/issues&quot;&gt;Выдачи&lt;/v-btn&gt;
+      &lt;v-btn text to=&quot;/reports&quot;&gt;Запросы&lt;/v-btn&gt;
+      &lt;v-btn text to=&quot;/profile&quot;&gt;Профиль&lt;/v-btn&gt;
+      &lt;v-btn v-if=&quot;!isAuthenticated&quot; text to=&quot;/login&quot;&gt;Вход&lt;/v-btn&gt;
+      &lt;v-btn v-if=&quot;!isAuthenticated&quot; text to=&quot;/register&quot;&gt;Регистрация&lt;/v-btn&gt;
+    &lt;/v-app-bar&gt;
+
+    &lt;v-main&gt;
+      &lt;v-container&gt;
+        &lt;router-view /&gt;
+      &lt;/v-container&gt;
+    &lt;/v-main&gt;
+  &lt;/v-app&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+import { ref, watch } from &quot;vue&quot;;
+import { useRoute } from &quot;vue-router&quot;;
+
+const route = useRoute();
+const isAuthenticated = ref(!!localStorage.getItem(&quot;token&quot;));
+
+watch(
+  () =&gt; route.fullPath,
+  () =&gt; {
+    isAuthenticated.value = !!localStorage.getItem(&quot;token&quot;);
+  },
+  { immediate: true },
+);
+&lt;/script&gt;
+</code></pre>
+<h4 id="srcrouterindexjs">Маршрутизация (<code>src/router/index.js</code>)</h4>
+<pre><code class="language-javascript">import { createRouter, createWebHistory } from &quot;vue-router&quot;;
+
+const routes = [
+  { path: &quot;/&quot;, redirect: &quot;/books&quot; },
+  { path: &quot;/books&quot;, name: &quot;books&quot;, component: Books },
+  {
+    path: &quot;/books/create&quot;,
+    name: &quot;book-create&quot;,
+    component: BookForm,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: &quot;/books/:id/edit&quot;,
+    name: &quot;book-edit&quot;,
+    component: BookForm,
+    meta: { requiresAuth: true },
+  },
+  { path: &quot;/halls&quot;, name: &quot;halls&quot;, component: Halls },
+  {
+    path: &quot;/halls/create&quot;,
+    name: &quot;hall-create&quot;,
+    component: HallForm,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: &quot;/halls/:id&quot;,
+    name: &quot;hall-detail&quot;,
+    component: HallDetail,
+    meta: { requiresAuth: true },
+  },
+  { path: &quot;/readers&quot;, name: &quot;readers&quot;, component: Readers },
+  {
+    path: &quot;/readers/create&quot;,
+    name: &quot;reader-create&quot;,
+    component: ReaderForm,
+    meta: { requiresAuth: true },
+  },
+  { path: &quot;/issues&quot;, name: &quot;issues&quot;, component: Issues },
+  {
+    path: &quot;/issues/create&quot;,
+    name: &quot;issue-create&quot;,
+    component: IssueForm,
+    meta: { requiresAuth: true },
+  },
+  { path: &quot;/login&quot;, name: &quot;login&quot;, component: Login },
+  { path: &quot;/register&quot;, name: &quot;register&quot;, component: Register },
+  { path: &quot;/profile&quot;, name: &quot;profile&quot;, component: Profile },
+  {
+    path: &quot;/reports&quot;,
+    name: &quot;reports&quot;,
+    component: Reports,
+    meta: { requiresAuth: true },
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
+});
+
+router.beforeEach((to) =&gt; {
+  const token = localStorage.getItem(&quot;token&quot;);
+  if (to.meta &amp;&amp; to.meta.requiresAuth &amp;&amp; !token) {
+    return { name: &quot;login&quot; };
+  }
+  return true;
+});
+
+export default router;
+</code></pre>
+<p><strong>Особенности маршрутизации:</strong></p>
+<ul>
+<li>Защита маршрутов, требующих аутентификации</li>
+<li>Автоматическое перенаправление на страницу входа</li>
+<li>Иерархическая структура URL</li>
+</ul>
+<h3 id="8">8. Реализация интерфейсов для работы с данными</h3>
+<h4 id="srcviewsbooksvue">Список книг (<code>src/views/Books.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;v-row class=&quot;mb-4&quot;&gt;
+      &lt;v-col&gt;
+        &lt;h2&gt;Книги&lt;/h2&gt;
+      &lt;/v-col&gt;
+      &lt;v-col class=&quot;d-flex justify-end&quot;&gt;
+        &lt;v-btn color=&quot;primary&quot; @click=&quot;$router.push({ name: 'book-create' })&quot;
+          &gt;Добавить книгу&lt;/v-btn
+        &gt;
+      &lt;/v-col&gt;
+    &lt;/v-row&gt;
+
+    &lt;v-simple-table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Название&lt;/th&gt;
+          &lt;th&gt;Авторы&lt;/th&gt;
+          &lt;th&gt;Зал&lt;/th&gt;
+          &lt;th&gt;Копий&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr v-for=&quot;item in booksInHalls&quot; :key=&quot;item.id&quot;&gt;
+          &lt;td&gt;{{ item.book_title }}&lt;/td&gt;
+          &lt;td&gt;{{ item.authors || &quot;-&quot; }}&lt;/td&gt;
+          &lt;td&gt;{{ item.hall_name }}&lt;/td&gt;
+          &lt;td&gt;{{ item.copies }}&lt;/td&gt;
+          &lt;td&gt;
+            &lt;v-btn
+              small
+              @click=&quot;
+                $router.push({ name: 'book-edit', params: { id: item.book } })
+              &quot;
+              &gt;Редактировать книгу&lt;/v-btn
+            &gt;
+            &lt;v-btn
+              small
+              @click=&quot;
+                $router.push({
+                  name: 'book-in-hall-edit',
+                  params: { id: item.id },
+                })
+              &quot;
+              &gt;Зал / копии&lt;/v-btn
+            &gt;
+            &lt;v-btn small color=&quot;error&quot; @click=&quot;remove(item.id)&quot;&gt;Удалить&lt;/v-btn&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/v-simple-table&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import api from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return { booksInHalls: [] };
+  },
+  methods: {
+    async load() {
+      try {
+        const res = await api.getBooksInHalls();
+        this.booksInHalls = res.data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async remove(id) {
+      if (!confirm(&quot;Удалить запись о книге в зале?&quot;)) return;
+      try {
+        await api.deleteBookInHall(id);
+        this.load();
+      } catch (e) {
+        console.error(e);
+      }
+    },
+  },
+  mounted() {
+    this.load();
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h4 id="srcviewshallsvue">Список залов (<code>src/views/Halls.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;v-row class=&quot;mb-4&quot;&gt;
+      &lt;v-col&gt;&lt;h2&gt;Залы&lt;/h2&gt;&lt;/v-col&gt;
+      &lt;v-col class=&quot;d-flex justify-end&quot;&gt;
+        &lt;v-btn color=&quot;primary&quot; @click=&quot;$router.push({ name: 'hall-create' })&quot;
+          &gt;Добавить зал&lt;/v-btn
+        &gt;
+      &lt;/v-col&gt;
+    &lt;/v-row&gt;
+
+    &lt;v-simple-table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Номер&lt;/th&gt;
+          &lt;th&gt;Название&lt;/th&gt;
+          &lt;th&gt;Вместимость (разных книг)&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr v-for=&quot;h in halls&quot; :key=&quot;h.id&quot;&gt;
+          &lt;td&gt;{{ h.number }}&lt;/td&gt;
+          &lt;td&gt;
+            &lt;v-btn
+              text
+              @click=&quot;
+                $router.push({ name: 'hall-detail', params: { id: h.id } })
+              &quot;
+            &gt;
+              {{ h.name }}
+            &lt;/v-btn&gt;
+          &lt;/td&gt;
+          &lt;td&gt;{{ h.capacity }}&lt;/td&gt;
+          &lt;td&gt;
+            &lt;v-btn
+              small
+              @click=&quot;
+                $router.push({ name: 'hall-detail', params: { id: h.id } })
+              &quot;
+            &gt;
+              Открыть
+            &lt;/v-btn&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/v-simple-table&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import api from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return { halls: [] };
+  },
+  methods: {
+    async load() {
+      try {
+        const res = await api.getHalls();
+        this.halls = res.data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+  },
+  mounted() {
+    this.load();
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h4 id="srcviewsbookformvue">Форма создания/редактирования книги (<code>src/views/BookForm.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;h2&gt;{{ isEdit ? &quot;Edit Book&quot; : &quot;Create Book&quot; }}&lt;/h2&gt;
+
+    &lt;v-form ref=&quot;form&quot; @submit.prevent=&quot;submit&quot;&gt;
+      &lt;v-row&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-text-field v-model=&quot;book.title&quot; label=&quot;Название&quot; required /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-text-field v-model=&quot;book.authors&quot; label=&quot;Авторы&quot; /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-text-field v-model=&quot;book.publisher&quot; label=&quot;Издатель&quot; /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;3&quot;&gt;
+          &lt;v-text-field v-model.number=&quot;book.year&quot; label=&quot;Год&quot; type=&quot;number&quot; /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;3&quot;&gt;
+          &lt;v-text-field v-model=&quot;book.code&quot; label=&quot;Код&quot; /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-text-field v-model=&quot;book.section&quot; label=&quot;Раздел&quot; /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;3&quot;&gt;
+          &lt;v-text-field
+            v-model.number=&quot;book.copies&quot;
+            label=&quot;Копий&quot;
+            type=&quot;number&quot;
+          /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-select
+            :items=&quot;halls&quot;
+            item-title=&quot;name&quot;
+            item-value=&quot;id&quot;
+            v-model=&quot;book.hall&quot;
+            label=&quot;Зал&quot;
+          /&gt;
+        &lt;/v-col&gt;
+      &lt;/v-row&gt;
+
+      &lt;v-row class=&quot;mt-4&quot;&gt;
+        &lt;v-col&gt;
+          &lt;v-btn color=&quot;primary&quot; @click=&quot;submit&quot;&gt;Сохранить&lt;/v-btn&gt;
+          &lt;v-btn text @click=&quot;$router.back()&quot;&gt;Отмена&lt;/v-btn&gt;
+        &lt;/v-col&gt;
+      &lt;/v-row&gt;
+    &lt;/v-form&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import api from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return {
+      book: {
+        title: &quot;&quot;,
+        authors: &quot;&quot;,
+        publisher: &quot;&quot;,
+        year: null,
+        section: &quot;&quot;,
+        code: &quot;&quot;,
+        copies: 1,
+        hall: null,
+      },
+      halls: [],
+      isEdit: false,
+    };
+  },
+  async mounted() {
+    const id = this.$route.params.id;
+    await this.loadHalls();
+    if (id) {
+      this.isEdit = true;
+      try {
+        const res = await api.getBook(id);
+        this.book = {
+          title: res.data.title,
+          authors: res.data.authors,
+          publisher: res.data.publisher,
+          year: res.data.year,
+          section: res.data.section,
+          code: res.data.code,
+          copies: res.data.copies,
+          hall: res.data.hall,
+        };
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  },
+  methods: {
+    async loadHalls() {
+      try {
+        const res = await api.getHalls();
+        this.halls = res.data;
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    async submit() {
+      try {
+        if (this.isEdit) {
+          await api.updateBook(this.$route.params.id, this.book);
+        } else {
+          await api.createBook(this.book);
+        }
+        this.$router.push({ name: &quot;books&quot; });
+      } catch (e) {
+        console.error(e);
+        alert(&quot;Ошибка сохранения книги&quot;);
+      }
+    },
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h3 id="9">9. Реализация статистических отчетов</h3>
+<h4 id="srcviewsreportsvue">Страница отчетов (<code>src/views/Reports.vue</code>)</h4>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;v-container&gt;
+    &lt;h2&gt;Запросы для библиотекаря&lt;/h2&gt;
+
+    &lt;v-divider class=&quot;my-4&quot; /&gt;
+
+    &lt;section class=&quot;mb-6&quot;&gt;
+      &lt;h3&gt;Книги, закрепленные за читателем&lt;/h3&gt;
+      &lt;v-row&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot;&gt;
+          &lt;v-select
+            v-model=&quot;selectedReaderId&quot;
+            :items=&quot;readers&quot;
+            item-title=&quot;full_name&quot;
+            item-value=&quot;id&quot;
+            label=&quot;Выберите читателя&quot;
+          /&gt;
+        &lt;/v-col&gt;
+        &lt;v-col cols=&quot;12&quot; md=&quot;6&quot; class=&quot;d-flex align-end&quot;&gt;
+          &lt;v-btn
+            color=&quot;primary&quot;
+            @click=&quot;loadReaderBooks&quot;
+            :disabled=&quot;!selectedReaderId&quot;
+          &gt;
+            Показать книги
+          &lt;/v-btn&gt;
+        &lt;/v-col&gt;
+      &lt;/v-row&gt;
+      &lt;v-list v-if=&quot;readerBooks.length&quot;&gt;
+        &lt;v-list-item v-for=&quot;(b, idx) in readerBooks&quot; :key=&quot;idx&quot;&gt;
+          &lt;v-list-item-title&gt;{{ b }}&lt;/v-list-item-title&gt;
+        &lt;/v-list-item&gt;
+      &lt;/v-list&gt;
+      &lt;p v-else class=&quot;text-muted&quot;&gt;Нет данных для выбранного читателя.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;v-divider class=&quot;my-4&quot; /&gt;
+
+    &lt;section class=&quot;mb-6&quot;&gt;
+      &lt;h3&gt;Читатели с просроченными книгами (&amp;gt; 1 месяца)&lt;/h3&gt;
+      &lt;v-btn color=&quot;primary&quot; @click=&quot;loadOverdueReaders&quot;
+        &gt;Загрузить список&lt;/v-btn
+      &gt;
+      &lt;v-list v-if=&quot;overdueReaders.length&quot; class=&quot;mt-3&quot;&gt;
+        &lt;v-list-item v-for=&quot;(r, idx) in overdueReaders&quot; :key=&quot;idx&quot;&gt;
+          &lt;v-list-item-title&gt;{{ r }}&lt;/v-list-item-title&gt;
+        &lt;/v-list-item&gt;
+      &lt;/v-list&gt;
+      &lt;p v-else class=&quot;text-muted mt-3&quot;&gt;Нет данных.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;v-divider class=&quot;my-4&quot; /&gt;
+
+    &lt;section class=&quot;mb-6&quot;&gt;
+      &lt;h3&gt;Читатели с редкими книгами (копий ≤ 2)&lt;/h3&gt;
+      &lt;v-btn color=&quot;primary&quot; @click=&quot;loadRareBooksReaders&quot;&gt;Загрузить&lt;/v-btn&gt;
+      &lt;v-simple-table class=&quot;mt-3&quot; v-if=&quot;rareBooksReaders.length&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Читатель&lt;/th&gt;
+            &lt;th&gt;Книга&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr v-for=&quot;(row, idx) in rareBooksReaders&quot; :key=&quot;idx&quot;&gt;
+            &lt;td&gt;{{ row.reader }}&lt;/td&gt;
+            &lt;td&gt;{{ row.book }}&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/v-simple-table&gt;
+      &lt;p v-else class=&quot;text-muted mt-3&quot;&gt;Нет данных.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;v-divider class=&quot;my-4&quot; /&gt;
+
+    &lt;section class=&quot;mb-6&quot;&gt;
+      &lt;h3&gt;Количество читателей младше 20 лет&lt;/h3&gt;
+      &lt;v-btn color=&quot;primary&quot; @click=&quot;loadUnder20&quot;&gt;Посчитать&lt;/v-btn&gt;
+      &lt;p class=&quot;mt-3&quot; v-if=&quot;under20Count !== null&quot;&gt;
+        Всего читателей младше 20 лет: &lt;strong&gt;{{ under20Count }}&lt;/strong&gt;
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;v-divider class=&quot;my-4&quot; /&gt;
+
+    &lt;section class=&quot;mb-6&quot;&gt;
+      &lt;h3&gt;Статистика по образованию (в %)&lt;/h3&gt;
+      &lt;v-btn color=&quot;primary&quot; @click=&quot;loadEducationStats&quot;&gt;Показать&lt;/v-btn&gt;
+      &lt;v-simple-table class=&quot;mt-3&quot; v-if=&quot;educationStats&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Категория&lt;/th&gt;
+            &lt;th&gt;Процент&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Начальное&lt;/td&gt;
+            &lt;td&gt;{{ educationStats.primary }}%&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Среднее&lt;/td&gt;
+            &lt;td&gt;{{ educationStats.secondary }}%&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Высшее&lt;/td&gt;
+            &lt;td&gt;{{ educationStats.higher }}%&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Ученая степень&lt;/td&gt;
+            &lt;td&gt;{{ educationStats.degree }}%&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/v-simple-table&gt;
+      &lt;p v-else class=&quot;text-muted mt-3&quot;&gt;Нет данных.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/v-container&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import api from &quot;../api/index.js&quot;;
+
+export default {
+  data() {
+    return {
+      readers: [],
+      selectedReaderId: null,
+      readerBooks: [],
+      overdueReaders: [],
+      rareBooksReaders: [],
+      under20Count: null,
+      educationStats: null,
+    };
+  },
+  async mounted() {
+    try {
+      const res = await api.getReaders();
+      this.readers = res.data;
+    } catch (e) {
+      console.error(e);
+    }
+  },
+  methods: {
+    async loadReaderBooks() {
+      if (!this.selectedReaderId) return;
+      try {
+        const res = await api.getReaderBooks(this.selectedReaderId);
+        this.readerBooks = res.data;
+      } catch (e) {
+        console.error(e);
+        this.readerBooks = [];
+      }
+    },
+    async loadOverdueReaders() {
+      try {
+        const res = await api.getIssuesOverdue();
+        this.overdueReaders = res.data;
+      } catch (e) {
+        console.error(e);
+        this.overdueReaders = [];
+      }
+    },
+    async loadRareBooksReaders() {
+      try {
+        const res = await api.getRareBooksReaders();
+        this.rareBooksReaders = res.data;
+      } catch (e) {
+        console.error(e);
+        this.rareBooksReaders = [];
+      }
+    },
+    async loadUnder20() {
+      try {
+        const res = await api.getReadersUnder20();
+        this.under20Count = res.data.readers_under_20 ?? null;
+      } catch (e) {
+        console.error(e);
+        this.under20Count = null;
+      }
+    },
+    async loadEducationStats() {
+      try {
+        const res = await api.getEducationStats();
+        this.educationStats = {
+          primary: res.data[&quot;primary_%&quot;],
+          secondary: res.data[&quot;secondary_%&quot;],
+          higher: res.data[&quot;higher_%&quot;],
+          degree: res.data[&quot;degree_%&quot;],
+        };
+      } catch (e) {
+        console.error(e);
+        this.educationStats = null;
+      }
+    },
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<h3 id="10-vuetify">10. Особенности реализации с Vuetify</h3>
+<h4 id="vuetify">Используемые компоненты Vuetify:</h4>
+<ul>
+<li><strong>v-app</strong> - основной контейнер приложения</li>
+<li><strong>v-app-bar</strong> - панель навигации</li>
+<li><strong>v-container</strong> - контейнер для контента</li>
+<li><strong>v-row/v-col</strong> - система сеток для адаптивной верстки</li>
+<li><strong>v-btn</strong> - кнопки с различными стилями</li>
+<li><strong>v-text-field</strong> - текстовые поля ввода</li>
+<li><strong>v-select</strong> - выпадающие списки</li>
+<li><strong>v-simple-table</strong> - таблицы для отображения данных</li>
+<li><strong>v-form</strong> - формы с валидацией</li>
+<li><strong>v-list</strong> - списки для отображения данных</li>
+<li><strong>v-divider</strong> - разделители</li>
+<li><strong>v-spacer</strong> - распорка для выравнивания</li>
+</ul>
+<h4 id="vuetify_1">Преимущества Vuetify:</h4>
+<ol>
+<li><strong>Material Design</strong> - современный и консистентный дизайн</li>
+<li><strong>Адаптивность</strong> - автоматическая адаптация под разные размеры экранов</li>
+<li><strong>Темы</strong> - легкая кастомизация цветовой схемы</li>
+<li><strong>Доступность</strong> - встроенная поддержка доступности (a11y)</li>
+<li><strong>Иконки</strong> - интеграция с Material Design Icons</li>
+</ol>
+<h2 id="_6">Запуск проекта</h2>
+<ol>
+<li>Установка зависимостей:</li>
+</ol>
+<pre><code class="language-bash">npm install
+</code></pre>
+<ol>
+<li>Запуск сервера разработки:</li>
+</ol>
+<pre><code class="language-bash">npm run dev
+</code></pre>
+<ol>
+<li>Сборка для продакшена:</li>
+</ol>
+<pre><code class="language-bash">npm run build
+</code></pre>
+<ol>
+<li>Предпросмотр сборки:</li>
+</ol>
+<pre><code class="language-bash">npm run preview
+</code></pre>
+<h2 id="_7">Архитектурные решения</h2>
+<h3 id="1_1">1. Разделение ответственности</h3>
+<ul>
+<li><strong>API модуль</strong> - централизованное взаимодействие с сервером</li>
+<li><strong>Views</strong> - компоненты страниц</li>
+<li><strong>Router</strong> - управление навигацией</li>
+<li><strong>App.vue</strong> - глобальная структура приложения</li>
+</ul>
+<h3 id="2_1">2. Управление состоянием</h3>
+<ul>
+<li><strong>LocalStorage</strong> для хранения токена авторизации</li>
+<li><strong>Реактивные данные</strong> Vue 3 для управления состоянием компонентов</li>
+<li><strong>Глобальная навигация</strong> с динамической проверкой аутентификации</li>
+</ul>
+<h3 id="3">3. Обработка ошибок</h3>
+<ul>
+<li>Централизованная обработка HTTP ошибок в axios interceptor</li>
+<li>Пользовательские сообщения об ошибках</li>
+<li>Graceful degradation при отсутствии данных</li>
+</ul>
+<h3 id="4">4. Безопасность</h3>
+<ul>
+<li>Автоматическое добавление токена в заголовки</li>
+<li>Защита маршрутов требующих аутентификации</li>
+<li>Корректная обработка выхода из системы</li>
+</ul>
+<h2 id="_8">Интеграция с серверной частью</h2>
+<h3 id="1-cors">1. CORS настройка</h3>
+<p>Серверная часть (лабораторная работа №3) была настроена для приема запросов с фронтенда:</p>
+<pre><code class="language-python"># settings.py
+INSTALLED_APPS = ['corsheaders']
+MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware']
+CORS_ALLOW_ALL_ORIGINS = True
+</code></pre>
+<h3 id="2_2">2. Аутентификация</h3>
+<ul>
+<li>Токенная аутентификация через Django REST Framework</li>
+<li>Автоматическое сохранение и использование токена</li>
+<li>Обработка истечения срока токена</li>
+</ul>
+<h3 id="3-api">3. API эндпоинты</h3>
+<p>Полная интеграция со всеми эндпоинтами серверной части:</p>
+<ul>
+<li>CRUD операции для всех сущностей</li>
+<li>Статистические запросы</li>
+<li>Управление пользователями</li>
+</ul>
+<h2 id="api">Подключение к API</h2>
+<h3 id="1-http-axios">1. Создание HTTP клиента с Axios</h3>
+<p>Для взаимодействия с серверной частью был создан специальный HTTP клиент в файле <code>src/api/axios.js</code>:</p>
+<pre><code class="language-javascript">import axios from &quot;axios&quot;;
+
+const api = axios.create({
+  baseURL: &quot;http://127.0.0.1:8000&quot;,
+  headers: {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+  },
+});
+</code></pre>
+<p><strong>Ключевые параметры:</strong></p>
+<ul>
+<li><code>baseURL: "http://127.0.0.1:8000"</code> - базовый адрес сервера Django</li>
+<li><code>headers: {'Content-Type': 'application/json'}</code> - формат данных JSON</li>
+</ul>
+<h3 id="2-interceptors">2. Автоматическая аутентификация через Interceptors</h3>
+<p>Для автоматического добавления токена авторизации был настроен request interceptor:</p>
+<pre><code class="language-javascript">api.interceptors.request.use((config) =&gt; {
+  const publicAuthEndpoints = [
+    &quot;/auth/token/login/&quot;,
+    &quot;/auth/users/&quot;,
+    &quot;/auth/token/logout/&quot;,
+  ];
+
+  const isPublicEndpoint = publicAuthEndpoints.some(
+    (endpoint) =&gt; config.url === endpoint,
+  );
+
+  if (!isPublicEndpoint) {
+    const token = localStorage.getItem(&quot;token&quot;);
+    if (token) {
+      config.headers.Authorization = `Token ${token}`;
+    }
+  }
+
+  return config;
+});
+</code></pre>
+<p><strong>Механизм работы:</strong></p>
+<ol>
+<li>Проверяется, является ли эндпоинт публичным (не требующим авторизации)</li>
+<li>Для защищенных эндпоинтов извлекается токен из localStorage</li>
+<li>Токен добавляется в заголовок <code>Authorization: Token ${token}</code></li>
+</ol>
+<h3 id="3_1">3. Централизованная обработка ошибок</h3>
+<p>Response interceptor для обработки ошибок:</p>
+<pre><code class="language-javascript">api.interceptors.response.use(
+  (response) =&gt; response,
+  (error) =&gt; {
+    console.error(
+      &quot;API Error:&quot;,
+      error.response?.status,
+      error.response?.data || error.message,
+    );
+    return Promise.reject(error);
+  },
+);
+</code></pre>
+<h3 id="4-api">4. Создание API функций</h3>
+<p>В файле <code>src/api/index.js</code> были созданы функции для каждого эндпоинта:</p>
+<h4 id="_9">Аутентификация:</h4>
+<pre><code class="language-javascript">async function login(username, password) {
+  const res = await api.post(&quot;/auth/token/login/&quot;, { username, password });
+  const token = res.data.auth_token || res.data.token;
+  if (token) localStorage.setItem(&quot;token&quot;, token);
+  return res.data;
+}
+
+async function getCurrentUser() {
+  return api.get(&quot;/auth/users/me/&quot;);
+}
+</code></pre>
+<h4 id="_10">Работа с книгами:</h4>
+<pre><code class="language-javascript">async function getBooks() {
+  return api.get(&quot;/api/books/&quot;);
+}
+
+async function createBook(data) {
+  return api.post(&quot;/api/books/&quot;, data);
+}
+
+async function updateBook(id, data) {
+  return api.put(`/api/books/${id}/`, data);
+}
+</code></pre>
+<h4 id="_11">Статистические запросы:</h4>
+<pre><code class="language-javascript">async function getReaderBooks(readerId) {
+  return api.get(`/api/readers/${readerId}/books/`);
+}
+
+async function getIssuesOverdue() {
+  return api.get(&quot;/api/issues/overdue/&quot;);
+}
+</code></pre>
+<h3 id="5-vue">5. Использование в Vue компонентах</h3>
+<p>Пример использования API в компоненте:</p>
+<pre><code class="language-javascript">import api from &quot;../api/index.js&quot;;
+
+export default {
+  methods: {
+    async loadBooks() {
+      try {
+        const res = await api.getBooks();
+        this.books = res.data;
+      } catch (e) {
+        console.error(&quot;Ошибка загрузки книг:&quot;, e);
+      }
+    },
+
+    async createBook() {
+      try {
+        await api.createBook(this.bookData);
+        this.$router.push({ name: &quot;books&quot; });
+      } catch (e) {
+        alert(&quot;Ошибка создания книги&quot;);
+      }
+    },
+  },
+};
+</code></pre>
+<h3 id="6_1">6. Процесс аутентификации</h3>
+<ol>
+<li><strong>Вход пользователя:</strong></li>
+<li>Отправка POST запроса на <code>/auth/token/login/</code></li>
+<li>Сохранение полученного токена в localStorage</li>
+<li>
+<p>Автоматическое добавление токена в последующие запросы</p>
+</li>
+<li>
+<p><strong>Проверка токена:</strong></p>
+</li>
+<li>Каждый защищенный запрос включает токен в заголовках</li>
+<li>Сервер проверяет валидность токена</li>
+<li>
+<p>При неверном токене возвращается ошибка 401</p>
+</li>
+<li>
+<p><strong>Выход из системы:</strong></p>
+</li>
+<li>Отправка POST запроса на <code>/auth/token/logout/</code></li>
+<li>Удаление токена из localStorage</li>
+<li>Перенаправление на страницу входа</li>
+</ol>
+<h3 id="7_1">7. Соответствие эндпоинтам сервера</h3>
+<p>Все API функции соответствуют эндпоинтам, определенным в Django REST Framework:</p>
+<table>
+<thead>
+<tr>
+<th>Функция</th>
+<th>HTTP метод</th>
+<th>Эндпоинт</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getBooks()</code></td>
+<td>GET</td>
+<td><code>/api/books/</code></td>
+<td>Получение списка книг</td>
+</tr>
+<tr>
+<td><code>createBook()</code></td>
+<td>POST</td>
+<td><code>/api/books/</code></td>
+<td>Создание новой книги</td>
+</tr>
+<tr>
+<td><code>updateBook()</code></td>
+<td>PUT</td>
+<td><code>/api/books/{id}/</code></td>
+<td>Обновление книги</td>
+</tr>
+<tr>
+<td><code>deleteBook()</code></td>
+<td>DELETE</td>
+<td><code>/api/books/{id}/</code></td>
+<td>Удаление книги</td>
+</tr>
+<tr>
+<td><code>login()</code></td>
+<td>POST</td>
+<td><code>/auth/token/login/</code></td>
+<td>Аутентификация</td>
+</tr>
+<tr>
+<td><code>register()</code></td>
+<td>POST</td>
+<td><code>/auth/users/</code></td>
+<td>Регистрация</td>
+</tr>
+<tr>
+<td><code>getCurrentUser()</code></td>
+<td>GET</td>
+<td><code>/auth/users/me/</code></td>
+<td>Текущий пользователь</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-cors">8. Обработка CORS</h3>
+<p>Для разрешения кросс-доменных запросов в Django был настроен CORS:</p>
+<pre><code class="language-python"># settings.py
+INSTALLED_APPS = ['corsheaders']
+MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware']
+CORS_ALLOW_ALL_ORIGINS = True
+</code></pre>
+<p>Это позволяет фронтенду на <code>localhost:5173</code> обращаться к бэкенду на <code>localhost:8000</code>.</p>
+<h2 id="_12">Выводы</h2>
+<p>В ходе выполнения лабораторной работы были успешно решены все поставленные задачи:</p>
+<ol>
+<li><strong>Настроен CORS</strong> для взаимодействия фронтенда и бэкенда</li>
+<li><strong>Реализованы интерфейсы аутентификации</strong> (вход, регистрация, профиль)</li>
+<li><strong>Созданы интерфейсы для работы</strong> с книгами, залами, читателями, выдачами</li>
+<li><strong>Подключена библиотека Vuetify</strong> для создания современного UI</li>
+<li><strong>Реализованы статистические отчеты</strong> в соответствии с требованиями</li>
+<li><strong>Настроена маршрутизация</strong> с защитой авторизованных страниц</li>
+<li><strong>Создана адаптивная верстка</strong> с использованием Material Design</li>
+</ol>
+<p>Система готова к использованию и предоставляет полноценный клиентский интерфейс для управления библиотекой с современной архитектурой Vue 3 + Vuetify и надежной интеграцией с Django REST API.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
