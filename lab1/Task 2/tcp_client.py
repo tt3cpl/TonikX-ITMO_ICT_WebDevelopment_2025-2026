@@ -1,7 +1,7 @@
 import socket
 
 # Создаем UDP-сокет для отправки и получения данных
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Вводим данные параллелограмма от пользователя
 a = input("Введите основание параллелограмма: ")
