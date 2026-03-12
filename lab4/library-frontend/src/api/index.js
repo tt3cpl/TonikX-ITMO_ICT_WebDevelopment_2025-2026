@@ -31,7 +31,6 @@ async function setPassword(current_password, new_password) {
   return api.post('/auth/users/set_password/', { current_password, new_password })
 }
 
-// Library endpoints
 async function getBooks() {
   return api.get('/api/books/')
 }
